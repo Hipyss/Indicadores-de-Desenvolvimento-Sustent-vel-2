@@ -292,3 +292,21 @@
     </script>
 </body>
 </html>
+<!-- Tela de Bloqueio (Site Fechado) -->
+<div class="fixed inset-0 bg-slate-900/95 backdrop-blur-md z-50 flex flex-col items-center justify-center p-6 text-center">
+    <div class="max-w-md bg-white p-8 rounded-2xl shadow-2xl border border-slate-100 flex flex-col items-center">
+        <div class="w-16 h-16 bg-amber-100 text-amber-600 rounded-full flex items-center justify-center text-2xl mb-4">
+            <i class="fa-solid fa-lock"></i>
+        </div>
+        <h2 class="text-2xl font-bold text-slate-900 mb-2">Acesso Restrito</h2>
+        <p class="text-slate-600 text-sm mb-6">
+            O painel de Indicadores de Desenvolvimento Sustentável está temporariamente indisponível para manutenção programada.
+        </p>
+        <div class="w-full bg-slate-100 p-3 rounded-lg text-xs text-slate-500 font-mono mb-4">
+            Previsão de retorno: Em breve
+        </div>
+        <button onclick="location.reload()" class="w-full bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2.5 px-4 rounded-xl transition flex items-center justify-center gap-2">
+            <i class="fa-solid fa-rotate-right"></i> Tentar Novamente
+        </button>
+    </div>
+</div>
