@@ -9,7 +9,6 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body class="bg-slate-50 font-sans text-slate-800 flex h-screen overflow-hidden">
-
     <aside class="w-64 bg-emerald-900 text-white flex flex-col justify-between hidden md:flex">
         <div>
             <div class="p-5 flex items-center gap-3 border-b border-emerald-800">
@@ -38,9 +37,7 @@
             Data de Atualização: 2026
         </div>
     </aside>
-
-    <main class="flex-1 flex flex-col overflow-y-auto">
-        
+    <main class="flex-1 flex flex-col overflow-y-auto"> 
         <header class="bg-white border-b border-slate-200 px-8 py-4 flex justify-between items-center shrink-0">
             <div>
                 <h1 class="text-2xl font-bold text-slate-900">Indicadores de Desenvolvimento Sustentável</h1>
@@ -55,11 +52,8 @@
                 </div>
             </div>
         </header>
-
-        <div class="p-8 space-y-8 max-w-7xl w-full mx-auto">
-            
-            <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
-                
+        <div class="p-8 space-y-8 max-w-7xl w-full mx-auto">      
+            <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">        
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div class="flex justify-between items-start">
                         <div>
@@ -78,7 +72,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div class="flex justify-between items-start">
                         <div>
@@ -97,7 +90,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div class="flex justify-between items-start">
                         <div>
@@ -116,7 +108,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm flex flex-col justify-between">
                     <div class="flex justify-between items-start">
                         <div>
@@ -135,11 +126,8 @@
                         </div>
                     </div>
                 </div>
-
             </section>
-
-            <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-                
+            <section class="grid grid-cols-1 lg:grid-cols-3 gap-6">     
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm lg:col-span-2">
                     <div class="flex justify-between items-center mb-6">
                         <div>
@@ -155,7 +143,6 @@
                         <canvas id="mixedChart"></canvas>
                     </div>
                 </div>
-
                 <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
                     <div class="mb-6">
                         <h4 class="text-lg font-bold text-slate-900">Desempenho por ODS</h4>
@@ -164,10 +151,8 @@
                     <div class="relative h-80 flex items-center justify-center">
                         <canvas id="radarChart"></canvas>
                     </div>
-                </div>
-
+              </div>
             </section>
-
             <section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
                 <div class="p-6 border-b border-slate-100 flex justify-between items-center">
                     <h4 class="text-lg font-bold text-slate-900">Status de Iniciativas por Região</h4>
@@ -208,7 +193,6 @@
             </section>
         </div>
     </main>
-
     <script>
         // Gráfico Combinado: Linhas (Emissões) + Barras (Investimento)
         const ctxMixed = document.getElementById('mixedChart').getContext('2d');
@@ -256,8 +240,7 @@
                     }
                 }
             }
-        });
-
+        }) 
         // Gráfico de Radar: Desempenho dos ODS
         const ctxRadar = document.getElementById('radarChart').getContext('2d');
         new Chart(ctxRadar, {
