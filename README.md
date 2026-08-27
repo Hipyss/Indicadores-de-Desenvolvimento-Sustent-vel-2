@@ -1,25 +1,3 @@
-{
-  "name": "meu-blog-tech",
-  "displayName": "Meu Blog Tech",
-  "description": "Exibe notícias de tecnologia do Meu blog tech no VS Code",
-  "version": "1.0.0",
-  "engines": {
-    "vscode": "^1.80.0"
-  },
-  "categories": [
-    "Other"
-  ],
-  "main": "./extension.js",
-  "activationEvents": [],
-  "contributes": {
-    "commands": [
-      {
-        "command": "meuBlogTech.openPost",
-        "title": "Meu Blog Tech: Abrir Notícias"
-      }
-    ]
-  }
-}
 const vscode = require('vscode');
 
 function activate(context) {
